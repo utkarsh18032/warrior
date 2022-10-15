@@ -85,7 +85,7 @@ ul{
 header{
     width:100vw;
     height:100vh;
-    background-image: url('/images/bghdimage8.jpg');
+    background-image: url(../images/bghdimage8.jpg);
     background-position: bottom;
     background-size: cover;
     display:flex;
@@ -258,7 +258,7 @@ h4{
 .explore{
     width:100vw;
     height:100vh;
-    background-image: url(/images/bghdimage4.png);
+    background-image: url(../images/bghdimage4.png);
     background-position:bottom;
     background-size: cover;
     background-repeat: no-repeat;
@@ -306,7 +306,7 @@ p{
     width:100vw;
     height:100vh;
     position: absolute;
-    background-image: url('/images/bghdimage11.jpg');
+    background-image: url(../images/bghdimage11.jpg);
     background-position:center;
     background-size: cover;
     
@@ -323,7 +323,7 @@ p{
     margin-left:30%;
     color: transparent;
     -webkit-text-stroke: 1px #fff;
-    background-image:url(/images/whitestrokeimg6.jpg);
+    background-image:url(../images/whitestrokeimg6.jpg);
     -webkit-background-clip:text;
     background-position: 0 0;
     animation: back 20s linear infinite;
@@ -378,7 +378,7 @@ p{
     
     color: transparent;
     -webkit-text-stroke: 1px #fff;
-    background-image:url(/images/whitestrokeimg5.jpg);
+    background-image:url(../images/whitestrokeimg5.jpg);
     -webkit-background-clip:text;
     background-position: 0 0;
     animation: back 20s linear infinite;
@@ -459,7 +459,7 @@ p{
 .useful-links{
     width:100vw;
     height:100vh;
-    background-image: url(/images/ninjaimage2.jpg);
+    background-image: url(../images/ninjaimage2.jpg);
     background-position:bottom;
     background-size: cover;
     background-repeat: no-repeat;
