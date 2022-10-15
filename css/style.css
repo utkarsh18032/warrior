@@ -1,0 +1,644 @@
+body{
+    margin:0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    
+    
+}
+
+
+.navbar{
+    display: flex;
+   flex-wrap: wrap;
+    position:absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    justify-content:space-around;
+    /*padding:20px;*/
+    color: blue;
+    font-family: 'Poppins', sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+.nav-links{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.nav-links li{
+    margin:0 25px;
+    font-size:3.5vmin;
+}
+.nav-links li a{
+    color:white;
+    text-transform: capitalize;
+    position: relative;
+    top:20px;
+}
+.nav-links li a:hover{
+
+    color:whitesmoke;
+    transition: 1s;
+    font-size:3.5vmin;
+    padding: 1px 5px;
+    border: 1px solid white;
+    background: transparent;
+}
+.nav-links li>ul li{
+    display: none;
+
+}
+.nav-links li:hover>ul li{
+    display: block;
+}
+
+.logo{
+    font-size:6vmin;
+    color:white;
+    text-shadow: -3px -3px black;
+
+    animation-name: logo-survival;
+    animation-duration:2.5s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes logo-survival
+{
+10%{color: green;}
+20%{color: black;}
+30%{text-shadow: -1px -1px yellow;}
+40%{transform: translatex(-110px);}
+60%{border-radius: 23px;}
+70%{transform: translatex(120px);}
+80%{transform:rotateY(180deg)}
+90%{transform: rotateX(100deg);}
+100%{}
+
+}
+
+
+header{
+    width:100vw;
+    height:100vh;
+    background-image: url('/images/bghdimage8.jpg');
+    background-position: bottom;
+    background-size: cover;
+    display:flex;
+    align-items:flex-end;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.header-content{
+    margin-bottom:120px;
+    color:white;
+    text-align: center;
+}
+.header-content h2{
+    font-size: 4vmin;
+    text-shadow: -3px -3px black;
+}
+.line{
+    width:150px;
+    height: 5px;
+    background:red;
+    margin:10px auto;
+}
+.header-content h1{
+    font-size: 7vmin;
+    text-shadow: -3px -3px black;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.btn{
+    padding: 8px 20px;
+    background:red;
+    border-radius:10px;
+    color:whitesmoke;
+    border: 1px solid black;
+}
+.btn:hover{
+    padding: 15px 30px;
+    background:green;
+    color:black;
+    transition:0.5s;
+    border:2px solid white;
+    font-weight: bolder;
+    
+}
+section{
+    width:80%;
+    margin:30px auto;
+
+}
+
+.title h1{
+    margin:50px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size:7vmin;
+    color: white;
+    background: black;
+    text-shadow:-3px -3px green;
+
+    animation-name: character-heading;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+
+}
+/*
+@keyframes character-heading
+{
+20%{background-color:blueviolet;}
+30%{background-color: black}
+40%{transform: translateY(40px);}
+50%{background-color: royalblue;}
+60%{background-color: navy;}
+
+70%{background-color: blueviolet;}
+80%{background-color:rgba(0, 225, 255, 0.87);}
+
+90%{transform: translateY(-50px);}
+100%{background-color: blue;}
+}
+*/
+
+/*.line2{
+    width:50%;
+     height: 5px;
+     background:blue;
+     box-shadow: -3px -3px chartreuse;
+     margin:15px auto;
+}*/
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width:100%;
+    justify-content: space-between;
+}
+.row.col img{
+    width:100%;
+}
+.row.col{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+.events{
+    /*background-image: url(/images/bghdimage9.jpg);*/
+    /*background-color: green;*/
+    background-position:center;
+    background-size: cover;
+    display:flex;   
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: center;
+    box-shadow: -8px -10px 250px 20px blue;
+
+
+    animation-name: eventscoloranimation;
+    animation-duration:8s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes eventscoloranimation
+{
+10%{background-color:rgba(0, 0, 0, 0.904);}
+20%{    box-shadow: -8px -10px 250px 20px red}
+30%{background-color: gray;}
+40%{transform: translateX(30px);}
+50%{background-color: royalblue;}
+60%{background-color: aqua;}
+70%{}
+80%{box-shadow: -8px -10px 250px 20px gray;}
+90%{background-color:seagreen;}
+100%{}
+
+}
+.events.row{
+    margin-top: 50px;
+
+}
+.btn1{
+    padding:4px;
+    background:royalblue;
+    border-radius:7px;
+    color:white;
+    border: 1px solid black; 
+}
+.btn1:hover{
+        padding:6px;
+        background:black;
+        border-radius:12px;
+        color:red;
+        border: 1px solid black; 
+        transition: 0.7s;
+    
+}
+h4{
+    font-size: 3vmin;
+    color:black;
+    text-shadow: -1px -1px white;
+    margin: 20px auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+.explore{
+    width:100vw;
+    height:100vh;
+    background-image: url(/images/bghdimage4.png);
+    background-position:bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.explore-content{
+    width:60%;
+    padding:50px;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.btn3{
+    padding:10px;
+    margin-left:20%;
+    background:green;
+    border-radius:7px;
+    color:white;
+    border: 1px solid black; 
+    text-transform: capitalize;
+}
+.btn3:hover{
+        padding:15px;
+        background:white;
+        border-radius:12px;
+        color:blue;
+        border: 1px solid white; 
+        transition: 0.7s;
+    
+}
+.explore-content h1{
+    font-size: 7vmin;
+    margin:20px;
+    color: white;
+    text-shadow: -2px -2px orangered;
+}
+p{
+    color:white;
+    padding: 0px 40px;
+}
+.more-info{
+    width:100vw;
+    height:100vh;
+    position: absolute;
+    background-image: url('/images/bghdimage11.jpg');
+    background-position:center;
+    background-size: cover;
+    
+    display:flex;
+    flex-wrap: wrap;
+    /*align-items:center;
+    justify-content:space-around;*/
+    box-shadow: -8px -10px 140px 20px rgb(226, 153, 43);
+
+}
+.logo2{
+    font-size:14vmin;
+    line-height:12vmin;
+    margin-left:30%;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background-image:url(/images/whitestrokeimg6.jpg);
+    -webkit-background-clip:text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+@keyframes back{
+    100%{
+        background-position:2000px 0 ;   
+    }
+}
+/*span{
+    color: blue;
+}*/
+/*.nested-links{
+    position: relative;
+    top: -100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.nested-links li{
+    margin:-1px 3em;
+    font-size:3.3vmin;
+
+}
+.nested-links li a{
+    color:white;
+    text-transform: capitalize;
+}
+.nested-links li a:hover{
+
+    background:black;
+    color:whitesmoke;
+    transition: 1s;
+    font-size:3.5vmin;
+    padding: 2px 15px;
+    border: 1px solid white;
+    
+}
+.nested-links li>ul li{
+    display: none;
+
+}
+.nested-links li:hover>ul li{
+    display: block;
+}*/
+.more-info h2{
+    font-size:10vmin;
+    text-align: center;
+    margin-left: 4%;;
+    text-transform: uppercase;
+    color: white;
+    
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background-image:url(/images/whitestrokeimg5.jpg);
+    -webkit-background-clip:text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+@keyframes back{
+    100%{
+        background-position:2000px 0 ;   
+    }
+}
+
+.more-info p{
+    display: flex;
+    flex-wrap: wrap;
+    font-size:2vmin;
+    position: relative;
+    top:5%;
+
+    text-transform: uppercase;
+    color: white;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+    justify-content: center;
+    align-items:center;
+    /*perspective: 1000px;
+    background:transparent;*/
+}
+
+.perfect{
+    background:whitesmoke;
+    height: 100vh;
+    width: 100vw;;
+}
+
+.card{
+    position: relative;
+    width:4rem;
+    height:3rem;
+    margin: 0.5rem;
+    text-align: center;
+    line-height: 3rem;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 0.5rem;
+    border: 1px solid gray;
+    transform-style: preserve-3d;
+}
+.face{
+    display:block;
+    position: absolute;
+    top: 0;
+    left:0;
+    width:100%;
+    height:100%;
+    border: 1px solid gray;
+    border-radius: 0.5rem;
+    background-size: cover;
+    background-position: center center;
+    transition: transform 0.3s ease-in-out;
+}
+.face--front{
+    font-size:2rem;
+    background-color:royalblue;
+}
+.face--back{
+    font-size: 1rem;
+    background-color:rgba(0, 0, 0, 0.767);
+    transform: rotateX(90deg);
+}
+.card:hover .face--front{
+    transform: rotateX(90deg);
+}
+.card:hover .face--back{
+    transform: rotateX(0deg);
+}
+.useful-links{
+    width:100vw;
+    height:100vh;
+    background-image: url(/images/ninjaimage2.jpg);
+    background-position:bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.part-1{
+   
+width:50vw;
+}
+.part-1 video{
+    width:25vw;
+    margin:10vw;
+}
+
+.part-2{
+    
+    width:50vw;
+}
+.part-2 h1{
+    font-size: 7vmin;
+    margin:20px;
+    color: white;
+    text-shadow: -2px -2px orangered;
+}
+.part-2{
+    font-size:4vmin;
+}
+.description{
+    width:100vw;
+    text-align: center;
+   /* background-image: url(/images/ninjaimage2.jpg);
+    background-position:bottom;
+    background-size: cover;
+    background-repeat: no-repeat;*/
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    box-shadow: -8px -10px 20px 20px blue;
+    
+}
+.description-header{
+    background:royalblue;
+    flex-grow: 1;     
+    box-shadow: -8px -10px 720px 20px blue;
+}
+.description-header h1{
+    text-transform: uppercase;
+    font-size:4vmin;
+    color: white;
+    text-shadow:-3px -3px green;
+}
+.descriptioncontent{
+    display: flex;
+    flex-wrap: wrap;
+     font-family: 'Poppins', sans-serif;
+     background-color:brown;
+    width:100%;
+   
+}
+.descriptioncontent-1{
+   margin-left: 3vw;
+    flex-grow: 1;
+    width:24%;
+}
+.descriptioncontent img{
+    margin-top:3%;
+    height:25vh;
+    width:35vh;
+}
+.descriptioncontent-2{
+    width:24%;
+    flex-grow: 1;
+    
+}
+.descriptioncontent-3{
+    width:24%;
+    flex-grow: 1;
+    
+}
+.descriptioncontent-4{
+    width:24%;
+    flex-grow: 1;
+    
+}
+
+.description-footer{
+    background:yellowgreen;
+    flex-grow:0.5;   
+}
+.footer-third{
+    display:flex;
+    flex-wrap: wrap;
+    
+    background:rgba(0, 0, 0, 0.664);
+    width:100vw;
+    
+}
+.footer-third h1{
+    
+    font-size:4vmin;
+    color:whitesmoke;
+    text-transform: capitalize;
+}
+.footer-third ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin:0 4%;
+    justify-content: space-between;
+    
+}
+.footer-third ul li{
+    font-size:3vmin;
+    text-transform: capitalize;
+    margin:2vw;
+}
+
+.footer-third a{
+    display: flex;
+    flex-wrap: wrap;
+    color:whitesmoke;
+    
+}
+video {
+    
+    height:25vh;
+    width:25vw;
+}
+@media all and (max-width:1100px){
+
+    .descriptioncontent{
+        flex-direction: column;
+    }
+    .descriptioncontent-1{
+        
+       
+        width:100%;
+        margin-top: 20px;
+    }
+    .descriptioncontent-2{
+        
+       
+        width:100%;
+        margin-top: 20px;
+    }
+    .descriptioncontent-3{
+        
+        
+        width:100%;
+        margin-top: 20px;
+    }
+    .descriptioncontent-4{
+        
+        
+        width:100%;
+        margin-top: 20px;
+    }
+}
+.container-2{
+    display: flex;
+    flex-wrap: wrap;
+    background:black;
+    justify-content: center;
+}
+.footer-fourth{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background:blueviolet;
+    width:100vw;
+    height:6vh;
+    line-height:1vh;
+
+    text-align: center;
+}
+.footer-fourth h1{
+    color:whitesmoke;
+    text-transform: uppercase;
+    
+}
